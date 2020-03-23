@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="wrapper">
@@ -24,11 +26,41 @@
             aria-label="Generated Password"
           ></textarea>
         </div>
+
+        <div> 
+          <label for="passwordLength">Password Length:</label>
+          <input class="form-control" type="number" id="passwordLength" value="8" syle="width:3px;">
+          <small id="passworlength">Must be 8 to 128 characters long.</small>
+        </div>
+ 
+        <div class="custom-control custom-switch check-item">
+          <input class="custom-control-input" type="checkbox" id="checkLowercase">
+          <label class="custom-control-label" for="checkLowercase">Lowercase Letters</label>
+        </div>
+           
+        <div class="custom-control custom-switch check-item">
+          <input class="custom-control-input" type="checkbox" id="checkUppercase">
+          <label class="custom-control-label" for="checkUppercase">Uppercase Letters</label>
+        </div>          
+         
+         <div class="custom-control custom-switch check-item">
+          <input class="custom-control-input" type="checkbox" id="checkNumbers">
+          <label class="custom-control-label" for="checkNumbers">Numeric</label>
+         </div>
+         
+         <div class="custom-control custom-switch check-item">
+          <input class="custom-control-input" type="checkbox" id="checkSpecial">
+          <label class="custom-control-label" for="checkSpecial">Special Characters</label>
+         </div>
+         
+
+        </div>
         <div class="card-footer">
-          <button id="generate" class="btn">Generate Password</button>
+          <button id="generatePasswordButton" type="button" class="btn">Generate Password</button>
         </div>
       </div>
+      
     </div>
-    <script src="script.js"></script>
+    
   </body>
 </html>
