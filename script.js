@@ -25,7 +25,7 @@ var charsets = [
     characters: " !\"#$%&'()*+,-./:;<=>?@[\\]^_`{|}~",
     id: document.getElementById("checkSpecial"),
   }
-]
+];
 
 
 //returns true if at least one of the checkboxes are checked
@@ -42,7 +42,7 @@ var errorMessages={
   errorLengthCheck: "Password length must be between 8-128 characters and select at least one character type.",
   errorLength: "Password length must be between 8-128 characters.",
   errorCheck: "Please select at least one character type."
-}
+};
 
 //gives feedback when parameters are not met
 function errorHandling(){
@@ -53,7 +53,7 @@ function errorHandling(){
       passwordTextArea.innerText=password;
     // error: user needs to adjust number of characters
   } else if (charCount < 8 || charCount > 128){
-      password="errorMessages.errorLength"
+      password="errorMessages.errorLength";
       passwordTextArea.innerText=errorMessages.errorLength;
       //error user needs to check at least one checkbox
   } else if(!checked()){
@@ -84,7 +84,7 @@ function generatePassword() {
     }
     //for each character of the length of the selected password length, a random character is selected from the pool of selected characters
     for (var i = 0; i < charCount; i++) {
-      password = password + passwordCharset[Math.floor((Math.random()* passwordCharset.length))]
+      password = password + passwordCharset[Math.floor((Math.random()* passwordCharset.length))];
     }
     //The read only text area is then filled with the generated password
     passwordTextArea.innerText = password;
