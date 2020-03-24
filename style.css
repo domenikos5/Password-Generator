@@ -18,7 +18,7 @@ body {
 }
 
 .wrapper {
-  padding-top: 30px;
+  padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -51,7 +51,7 @@ header {
 }
 
 .card-body {
-  min-height: 100px;
+  min-height: 80px;
 }
 
 .card-footer {
@@ -83,7 +83,22 @@ header {
   font-size: 22px;
   line-height: 22px;
   margin: 16px 16px 16px 20px;
-  padding: 14px 34px;
+  padding: 12px 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn2 {border: none;
+  background-color: cornflowerblue;
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+    0px;
+  color: hsl(0, 0%, 100%);
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 12px 30px;
   text-align: center;
   cursor: pointer;
 }
@@ -92,6 +107,8 @@ button[disabled] {
   cursor: default;
   background: #c0c7cf;
 }
+
+
 
 .float-right {
   float: right;

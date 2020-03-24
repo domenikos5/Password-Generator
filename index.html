@@ -12,11 +12,11 @@
   <body>
     <div class="wrapper">
       <header>
-        <h1>Password Generator</h1>
+        <h2>Password Generator</h2>
       </header>
       <div class="card">
         <div class="card-header">
-          <h2>Generate a Password</h2>
+          <h3>Generate a Password</h3>
         </div>
         <div class="card-body">
           <textarea
@@ -52,15 +52,16 @@
           <input class="custom-control-input" type="checkbox" id="checkSpecial">
           <label class="custom-control-label" for="checkSpecial">Special Characters</label>
          </div>
-         
-
+      
         </div>
         <div class="card-footer">
-          <button id="generatePasswordButton" type="button" class="btn">Generate Password</button>
+          <form>
+            <button id="generatePasswordButton" type="button" class="btn">Generate Password</button>             
+          <button disabled id="copyButton" type="button" class="btn2"><i class="far fa-copy"></i> Copy to Clipboard</button>
+          </form>
         </div>
-      </div>
-      
-    </div>
-    
-  </body>
+     
+     </div>
+  
+        </body>
 </html>
