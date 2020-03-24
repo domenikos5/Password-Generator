@@ -88,7 +88,8 @@ header {
   cursor: pointer;
 }
 
-.btn2 {border: none;
+.btn2 {
+  border: none;
   background-color: cornflowerblue;
   border-radius: 25px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
