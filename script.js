@@ -91,8 +91,7 @@ function generatePassword() {
   }
 }
 
-var passwordTextArea = document.getElementById("password");
-var copyButton = document.getElementById("copyButton");
+
 
 
 //event listeners
